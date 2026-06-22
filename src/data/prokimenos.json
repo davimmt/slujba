@@ -1,0 +1,74 @@
+{
+  "d1": {
+    "tom": "1",
+    "versos": {
+      "1": "Esteja sobre nós, Senhor, a Tua misericórdia,",
+      "2": "segundo a esperança que depositamos em Ti."
+    },
+    "ref": "Sl. 32,22"
+  },
+  "d2": {
+    "tom": "2",
+    "versos": {
+      "1": "O Senhor é a minha força e o meu cântico,",
+      "2": "Ele se fez a minha salvação."
+    },
+    "ref": "Sl. 117,14"
+  },
+  "d3": {
+    "tom": "3",
+    "versos": {
+      "1": "Cantai ao nosso Deus, cantai.",
+      "2": "Cantai ao nosso Rei, cantai."
+    },
+    "ref": "Sl. 46,6"
+  },
+  "d4": {
+    "tom": "4",
+    "versos": {
+      "1": "Ó Senhor, quão admiráveis são as Tuas obras!",
+      "2": "Feitas, todas, com sabedoria!"
+    },
+    "ref": "Sl. 103,24"
+  },
+  "d5": {
+    "tom": "5",
+    "versos": {
+      "1": "Tu nos guardas e proteges, Senhor,",
+      "2": "desde agora e por todos os séculos."
+    },
+    "ref": "Sl. 11,8"
+  },
+  "d6": {
+    "tom": "6",
+    "versos": {
+      "1": "Salva, Senhor, o Teu povo,",
+      "2": "e abençoa a Tua herança."
+    },
+    "ref": "Sl. 27,9"
+  },
+  "d7": {
+    "tom": "7",
+    "versos": {
+      "1": "O Senhor dará ânimo ao Seu povo,",
+      "2": "o Senhor abençoará o Seu povo com a paz."
+    },
+    "ref": "Sl. 28,11"
+  },
+  "d8": {
+    "tom": "8",
+    "versos": {
+      "1": "Fazei votos",
+      "2": "e pagai-os ao Senhor, nosso Deus."
+    },
+    "ref": "Sl. 75,12"
+  },
+  "sl115-15": {
+    "tom": "7",
+    "versos": {
+      "1": "Preciosa é à vista do Senhor",
+      "2": "a morte dos Seus santos."
+    },
+    "ref": "Sl. 115,15"
+  }
+}

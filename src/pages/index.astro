@@ -1,0 +1,142 @@
+---
+import "../styles/global.css";
+import config from "../../config.json";
+import troparios from "../data/troparios.json";
+import kontakia from "../data/kondakions.json";
+import prokimenos from "../data/prokimenos.json";
+
+const entrada = [
+  ...config.troparios_ids.map((id) => {
+    const t = troparios[id];
+    if (!t) throw new Error(`Tropário inválido: ${id}`);
+
+    return {
+      tipo: "tropario",
+      ...t
+    };
+  }),
+
+  ...config.kontakions_ids.map((id) => {
+    const k = kontakia[id];
+    if (!k) throw new Error(`Kondákio inválido: ${id}`);
+
+    return {
+      tipo: "kondakion",
+      ...k
+    };
+  })
+];
+
+const kontakiaIndices = entrada
+  .map((item, idx) => ({ item, idx }))
+  .filter(({ item }) => item.tipo === "kondakion");
+
+const penultimoKondakion =
+  kontakiaIndices.length >= 2
+    ? kontakiaIndices[kontakiaIndices.length - 2].idx
+    : null;
+
+const ultimoKondakion =
+  kontakiaIndices.length
+    ? kontakiaIndices[kontakiaIndices.length - 1].idx
+    : null;
+
+const prokimeno1 = prokimenos[config.prokimeno1_id];
+const prokimenos2 = config.prokimeno2_id
+  ? prokimenos[config.prokimeno2_id]
+  : null;
+
+if (!prokimeno1) {
+  throw new Error("Prokímeno inválido.");
+}
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/slujba/favicon.jpg" />
+    <title>Slujba</title>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 font-serif">
+    <main class="max-w-3xl mx-auto px-6 py-10 space-y-10">
+
+      <header class="text-center">
+        <h1 class="text-3xl font-bold">
+          {config.titulo}
+        </h1>
+        <h1 class="text-2xl font-bold">
+          Tom {config.tom}
+        </h1>
+      </header>
+
+      <!-- Tropários e Kondákios -->
+      <section class="space-y-6">
+        <h2 class="text-2xl font-bold border-b pb-2">
+          Tropários e Kondákios
+        </h2>
+
+        {entrada.map((item, idx) => (
+          <div class="space-y-2">
+
+            {item.tipo === "tropario" && (
+              <>
+                <p class="text-center italic text-(--primary) text-lg">
+                  Tropário {item.titulo} — Tom {item.tom}
+                </p>
+
+                <p class="leading-relaxed">
+                  {item.versos}
+                </p>
+              </>
+            )}
+
+            {item.tipo === "kondakion" && (
+              <>
+                {idx === penultimoKondakion && (
+                  <h2 class="text-xl text-(--primary)">
+                    Glória ao Pai e ao Filho e ao Espírito Santo.
+                  </h2>
+                )}
+
+                {idx === ultimoKondakion && (
+                  <h2 class="text-xl text-(--primary)">
+                    E agora e sempre e pelos séculos dos séculos. Amém.
+                  </h2>
+                )}
+
+                <p class="text-center italic text-(--primary) text-lg">
+                  Kondákio {item.titulo} — Tom {item.tom}
+                </p>
+
+                <p class="leading-relaxed">
+                  {item.versos}
+                </p>
+              </>
+            )}
+
+          </div>
+        ))}
+      </section>
+
+      <!-- Prokímenos -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold border-b pb-2">
+          Prokímeno
+        </h2>
+
+        <div class="space-y-2">
+          <p>Tom {prokimeno1.tom}: {prokimeno1.versos["1"]} / {prokimeno1.versos["2"]}</p>
+
+          {prokimenos2 && (
+            <div class="pt-4 space-y-2">
+              <p>Tom {prokimenos2.tom}: {prokimenos2.versos["1"]} / {prokimenos2.versos["2"]}</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
