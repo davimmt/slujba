@@ -49,10 +49,10 @@
     "tom": "4",
     "versos": "Teu venerabilíssimo templo revelou-se a todos os fiéis / como cura do espírito, / portanto com altas vozes clamamos a ti, / ó honrabilíssima virgem mártir Zinaída: // Roga incessantemente por todos nós a Cristo Deus."
   },
-  "protetora_cristaos": {
-    "titulo": "a Mãe de Deus",
-    "tom": "6",
-    "versos": "Ó proteção dos cristãos que não pode ser envergonhada, / ó mediação infalível junto ao Criador, / não desprezes as vozes suplicantes dos pecadores, / mas sê pronta, ó bondosa, em socorrer-nos que em fé clamamos a ti; / apressa-te na intercessão e acelera a súplica, // tu que sempre proteges, ó Mãe de Deus, aqueles que te honram."
+  "admiravel_protetora": {
+    "titulo": "à Mãe de Deus",
+    "tom": "6 (Dogmática)",
+    "versos": "Ó admirável Protetora dos Cristãos / e nossa Medianeira ante o Criador, / não desprezes as súplicas de nenhum de nós pecadores, / mas apressa-Te em auxiliar-nos como Mãe bondosa que és, / pois Te invocamos com fé. / Roga por nós junto de Deus, / tu que defendes sempre aqueles que Te veneram."
   },
   "jonas_moscou": {
     "titulo": "a São Jonas, Hierarca Metropolitano de Moscou",

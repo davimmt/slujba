@@ -2,7 +2,12 @@
   "titulo": "4º Domingo após o Pentecostes / Santo Hierarca Metropolita Jonas de Moscou",
   "tom": "3",
   "troparios_ids": ["d3", "zinaida_filonila", "jonas_moscou"],
-  "kontakions_ids": ["d3", "zinaida_filonila", "jonas_moscou", "protetora_cristaos"],
+  "kontakions_ids": ["d3", "zinaida_filonila", "jonas_moscou", "admiravel_protetora"],
   "prokimeno1_id": "d3",
-  "prokimeno2_id": "sl115-15"
+  "prokimeno_verso_id": "sl47-2",
+  "prokimeno2_id": "sl115-15",
+  "aleluia1" : {"id": "sl30-2", "tom": "3"},
+  "aleluia2" : {"id": "sl30-3", "tom": "3"},
+  "aleluia3" : {"id": "sl131-9", "tom": "2"},
+  "versos_comunhao_id": "justos_memoria_rumores"
 }

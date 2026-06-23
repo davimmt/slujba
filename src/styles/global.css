@@ -9,42 +9,42 @@
 
 @font-face {
   font-family: "Noto Serif Light";
-  src: url("/slova/fonts/NotoSerif-Light.ttf") format("truetype");
+  src: url("/slujba/fonts/NotoSerif-Light.ttf") format("truetype");
   font-weight: lighter; /* 200 */
   font-style: normal;
 }
 
 @font-face {
   font-family: "Noto Serif Light";
-  src: url("/slova/fonts/NotoSerif-LightItalic.ttf") format("truetype");
+  src: url("/slujba/fonts/NotoSerif-LightItalic.ttf") format("truetype");
   font-weight: lighter; /* 200 */
   font-style: italic;
 }
 
 @font-face {
   font-family: "Noto Serif";
-  src: url("/slova/fonts/NotoSerif-Medium.ttf") format("truetype");
+  src: url("/slujba/fonts/NotoSerif-Medium.ttf") format("truetype");
   font-weight: normal; /* 400 */
   font-style: normal;
 }
 
 @font-face {
   font-family: "Noto Serif";
-  src: url("/slova/fonts/NotoSerif-MediumItalic.ttf") format("truetype");
+  src: url("/slujba/fonts/NotoSerif-MediumItalic.ttf") format("truetype");
   font-weight: normal; /* 400 */
   font-style: italic;
 }
 
 @font-face {
   font-family: "Noto Serif";
-  src: url("/slova/fonts/NotoSerif-Bold.ttf") format("truetype");
+  src: url("/slujba/fonts/NotoSerif-Bold.ttf") format("truetype");
   font-weight: bold; /* 700 */
   font-style: normal;
 }
 
 @font-face {
   font-family: "Noto Serif";
-  src: url("/slova/fonts/NotoSerif-BoldItalic.ttf") format("truetype");
+  src: url("/slujba/fonts/NotoSerif-BoldItalic.ttf") format("truetype");
   font-weight: bold; /* 700 */
   font-style: italic;
 }
@@ -73,12 +73,12 @@ body {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url(/slova/fonts/triodion-ieUcs.eot);
-  src: url('/slova/fonts/triodion-ieUcs.eot?#iefix') format('embedded-opentype'),
-       url(/slova/fonts/triodion-ieUcs.woff2) format('woff2'),
-       url(/slova/fonts/triodion-ieUcs.woff) format('woff'),
-       url(/slova/fonts/triodion-ieUcs.ttf) format('truetype'),
-       url('/slova/fonts/triodion-ieUcs.svg#triodion-ieUcs') format('svg');
+  src: url(/slujba/fonts/triodion-ieUcs.eot);
+  src: url('/slujba/fonts/triodion-ieUcs.eot?#iefix') format('embedded-opentype'),
+       url(/slujba/fonts/triodion-ieUcs.woff2) format('woff2'),
+       url(/slujba/fonts/triodion-ieUcs.woff) format('woff'),
+       url(/slujba/fonts/triodion-ieUcs.ttf) format('truetype'),
+       url('/slujba/fonts/triodion-ieUcs.svg#triodion-ieUcs') format('svg');
 }
 
 .slavonic {
@@ -95,59 +95,14 @@ i.s {
   font-size: 1.3em;
 }
 
-i.sh {
-  font-family: "Triodion";
-  font-style: normal;
-  position: relative;
-  display: inline-block;
+i.ref {
+  color: var(--detail);
+  font-size: 12px;
 }
 
-i.sh::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -5px;
-  right: -5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-color: oklch(0.637 0.237 25.331 / 0.1);
-  z-index: -1;
-}
-
-/* Hover data-tooltip related */
-[data-tooltip] {
-  cursor: pointer;
-}
-
-[data-tooltip]::after {
-  content: attr(data-tooltip);
-  overflow: hidden;
-  visibility: hidden;
-  font-size: 13px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 2px 7px;
-  border-radius: 4px;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-[data-tooltip]:not(.hover-left)::after {
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-[data-tooltip].hover-left::after {
-  top: 0%;
-  right: 100%;
-  margin-right: 8px;
-}
- 
-[data-tooltip]:hover::after {
-  visibility: visible;
-  opacity: 1;
+@media print {
+  i.ref {
+    color: grey;
+    font-size: 9px;
+  }
 }

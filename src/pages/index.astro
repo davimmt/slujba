@@ -4,6 +4,8 @@ import config from "../../config.json";
 import troparios from "../data/troparios.json";
 import kontakia from "../data/kondakions.json";
 import prokimenos from "../data/prokimenos.json";
+import versos from "../data/versos.json";
+import versosComunhao from "../data/versos-comunhao.json";
 
 const entrada = [
   ...config.troparios_ids.map((id) => {
@@ -46,9 +48,13 @@ const prokimenos2 = config.prokimeno2_id
   ? prokimenos[config.prokimeno2_id]
   : null;
 
-if (!prokimeno1) {
-  throw new Error("Prokímeno inválido.");
-}
+const prokimenoVerso = versos[config.prokimeno_verso_id];
+
+const aleluia1 = versos[config.aleluia1.id];
+const aleluia2 = versos[config.aleluia2.id];
+const aleluia3 = versos[config.aleluia3.id];
+
+const versoComunhao = versosComunhao[config.versos_comunhao_id];
 ---
 
 <html lang="pt-BR">
@@ -59,60 +65,50 @@ if (!prokimeno1) {
     <title>Slujba</title>
   </head>
 
-  <body class="bg-gray-50 text-gray-900 font-serif">
-    <main class="max-w-3xl mx-auto px-6 py-10 space-y-10">
+  <body class="print:!bg-white print:!text-black">
+    <main class="max-w-3xl mx-auto px-6 py-10 print:p-3 print:text-xs">
 
       <header class="text-center">
-        <h1 class="text-3xl font-bold">
-          {config.titulo}
-        </h1>
-        <h1 class="text-2xl font-bold">
-          Tom {config.tom}
-        </h1>
+        <h1 class="font-bold text-lg print:text-sm">{config.titulo}</h1>
+        <h2 class="!font-bold">Tom {config.tom}</h1>
       </header>
 
       <!-- Tropários e Kondákios -->
-      <section class="space-y-6">
-        <h2 class="text-2xl font-bold border-b pb-2">
-          Tropários e Kondákios
-        </h2>
+      <section>
+        <h2 class="!font-bold pt-3">Tropários e Kondákios</h2>
 
         {entrada.map((item, idx) => (
-          <div class="space-y-2">
+          <div>
 
             {item.tipo === "tropario" && (
               <>
-                <p class="text-center italic text-(--primary) text-lg">
+                <p class="text-center italic text-(--primary) pt-3">
                   Tropário {item.titulo} — Tom {item.tom}
                 </p>
 
-                <p class="leading-relaxed">
-                  {item.versos}
-                </p>
+                <p class="text-justify">{item.versos}</p>
               </>
             )}
 
             {item.tipo === "kondakion" && (
               <>
                 {idx === penultimoKondakion && (
-                  <h2 class="text-xl text-(--primary)">
+                  <h2 class="text-(--primary) pt-3">
                     Glória ao Pai e ao Filho e ao Espírito Santo.
                   </h2>
                 )}
 
                 {idx === ultimoKondakion && (
-                  <h2 class="text-xl text-(--primary)">
+                  <h2 class="text-(--primary) pt-3">
                     E agora e sempre e pelos séculos dos séculos. Amém.
                   </h2>
                 )}
 
-                <p class="text-center italic text-(--primary) text-lg">
+                <p class="text-center italic text-(--primary) pt-3">
                   Kondákio {item.titulo} — Tom {item.tom}
                 </p>
 
-                <p class="leading-relaxed">
-                  {item.versos}
-                </p>
+                <p class="text-justify">{item.versos}</p>
               </>
             )}
 
@@ -121,20 +117,43 @@ if (!prokimeno1) {
       </section>
 
       <!-- Prokímenos -->
-      <section class="space-y-4">
-        <h2 class="text-2xl font-bold border-b pb-2">
-          Prokímeno
-        </h2>
+      <section>
+        <h2 class="!font-bold pt-3">Prokímeno</h2>
 
-        <div class="space-y-2">
-          <p>Tom {prokimeno1.tom}: {prokimeno1.versos["1"]} / {prokimeno1.versos["2"]}</p>
-
+        <div>
+          <p><i class="text-(--primary)">Tom {prokimeno1.tom}:</i>
+            {prokimeno1.versos["1"]} / {prokimeno1.versos["2"]} <i class="ref">{prokimeno1.ref}</i>
+          </p>
+          <p>{prokimenoVerso.verso} <i class="ref">{prokimenoVerso.ref}</i></p>
           {prokimenos2 && (
-            <div class="pt-4 space-y-2">
-              <p>Tom {prokimenos2.tom}: {prokimenos2.versos["1"]} / {prokimenos2.versos["2"]}</p>
-            </div>
+          <p><i class="text-(--primary)">Tom {prokimenos2.tom}:</i>
+            {prokimenos2.versos["1"]} / {prokimenos2.versos["2"]} <i class="ref">{prokimenos2.ref}</i>
+          </p>
           )}
         </div>
+      </section>
+
+      <!-- Aleluia -->
+      <section>
+        <h2 class="!font-bold pt-3">Aleluia</h2>
+
+        <p>
+          <i class="text-(--primary)">Tom {config.aleluia1.tom}:</i>{" "}
+          {aleluia1.verso} <i class="ref"> {aleluia1.ref}</i>
+        </p>
+
+        <p>{aleluia2.verso} <i class="ref"> {aleluia2.ref}</i></p>
+
+        <p>
+          <i class="text-(--primary)">Tom {config.aleluia3.tom}:</i>{" "}
+          {aleluia3.verso} <i class="ref"> {aleluia3.ref}
+        </p>
+      </section>
+
+      <!-- Verso da Comunhão -->
+      <section>
+        <h2 class="!font-bold pt-3">Verso da Comunhão</h2>
+        <p>{versoComunhao}</p>
       </section>
 
     </main>
