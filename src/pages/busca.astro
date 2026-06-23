@@ -1,0 +1,211 @@
+---
+import "../styles/global.css";
+import troparios from "../data/troparios.json";
+import kontakia from "../data/kondakions.json";
+
+const items = [
+  ...Object.entries(troparios).map(([id, item]) => ({
+    id,
+    tipo: "Tropário",
+    ...item,
+  })),
+  ...Object.entries(kontakia).map(([id, item]) => ({
+    id,
+    tipo: "Kondákion",
+    ...item,
+  })),
+];
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/slujba/favicon.jpg" />
+    <title>Slujba - Busca</title>
+  </head>
+
+  <body>
+    <main class="max-w-3xl mx-auto px-6 py-10">
+      <h1 class="text-3xl">Busca</h1>
+
+      <div class="py-3"></div>
+
+      <input
+        class="border rounded-sm px-7 py-3"
+        id="search"
+        type="search"
+        placeholder="Pesquisar..."
+      />
+
+      <p id="count" class="text-(--detail)"></p>
+
+      <div class="py-3"></div>
+
+      <div id="results"></div>
+
+      <div class="flex gap-3 items-center mt-4">
+        <button class="border px-3 py-1 rounded-sm" id="prev">Anterior</button>
+        <span id="pageInfo"></span>
+        <button class="border px-3 py-1 rounded-sm" id="next">Próxima</button>
+      </div>
+    </main>
+
+    <script type="module" define:vars={{ items }}>
+      const PAGE_SIZE = 8;
+
+      const search = document.getElementById("search");
+      const results = document.getElementById("results");
+      const count = document.getElementById("count");
+      const pageInfo = document.getElementById("pageInfo");
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+
+      function getParams() {
+        const url = new URL(window.location.href);
+
+        return {
+          q: url.searchParams.get("q") || "",
+          page: parseInt(url.searchParams.get("page") || "1", 10),
+        };
+      }
+
+      function setParams(q, page) {
+        const url = new URL(window.location.href);
+
+        if (q) url.searchParams.set("q", q);
+        else url.searchParams.delete("q");
+
+        url.searchParams.set("page", page);
+
+        window.history.replaceState({}, "", url);
+      }
+
+      const params = getParams();
+
+      let query = params.q;
+      let page = params.page;
+      let filtered = items;
+
+      search.value = query;
+
+      function normalize(str) {
+        return (str || "")
+          .toString()
+          .normalize("NFKD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase();
+      }
+
+      function highlight(text, q) {
+        if (!q) return text;
+
+        const normText = normalize(text);
+        const normQuery = normalize(q);
+
+        let result = "";
+        let i = 0;
+        let j = 0;
+
+        while (i < text.length) {
+          const slice = text.slice(i, i + 1);
+          const normSlice = normalize(slice);
+
+          if (normText.slice(j, j + normQuery.length) === normQuery) {
+            result += `<mark>${text.slice(i, i + normQuery.length)}</mark>`;
+            i += normQuery.length;
+            j += normQuery.length;
+            continue;
+          }
+
+          result += text[i];
+          i++;
+          j++;
+        }
+
+        return result;
+      }
+
+      function syncURL() {
+        setParams(query, page);
+      }
+
+      function applyFilter() {
+        const q = normalize(query);
+
+        filtered = items.filter((item) => {
+          const text = normalize(
+            item.titulo + " " + item.versos + " " + item.tom + " " + item.tipo
+          );
+
+          return text.includes(q);
+        });
+
+        page = 1;
+        syncURL();
+        render();
+      }
+
+      function render() {
+        const totalPages = Math.max(
+          1,
+          Math.ceil(filtered.length / PAGE_SIZE)
+        );
+
+        if (page > totalPages) page = totalPages;
+
+        const start = (page - 1) * PAGE_SIZE;
+
+        const pageItems = filtered.slice(start, start + PAGE_SIZE);
+
+        results.innerHTML = pageItems
+          .map(
+            (item) => `
+              <article class="border rounded-sm py-3 px-7 my-4">
+                <h2>
+                  ${highlight(item.tipo, query)}
+                  ${highlight(item.titulo, query)} — Tom ${item.tom}
+                </h2>
+
+                <p class="text-justify">
+                  ${highlight(item.versos, query)}
+                </p>
+              </article>
+            `
+          )
+          .join("");
+
+        count.textContent = `${filtered.length} resultado(s)`;
+        pageInfo.textContent = `Página ${page} de ${totalPages}`;
+
+        prev.disabled = page <= 1;
+        next.disabled = page >= totalPages;
+      }
+
+      search.addEventListener("input", (e) => {
+        query = e.target.value;
+        applyFilter();
+      });
+
+      prev.addEventListener("click", () => {
+        if (page > 1) {
+          page--;
+          syncURL();
+          render();
+        }
+      });
+
+      next.addEventListener("click", () => {
+        const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+
+        if (page < totalPages) {
+          page++;
+          syncURL();
+          render();
+        }
+      });
+
+      applyFilter();
+    </script>
+  </body>
+</html>
