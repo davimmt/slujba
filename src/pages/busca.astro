@@ -27,27 +27,75 @@ const items = [
 
   <body>
     <main class="max-w-3xl mx-auto px-6 py-10">
-      <h1 class="text-3xl">Busca</h1>
+      <h1 class="text-4xl font-bold">Busca</h1>
+      <p class="mt-2 text-xl text-red-500">Tropários e Kondákions</p>
+      <p class="mt-3 text-sm text-amber-500/70">Pesquisa por título, tom ou texto litúrgico.</p>
 
-      <div class="py-3"></div>
-
-      <input
-        class="border rounded-sm px-7 py-3"
-        id="search"
-        type="search"
-        placeholder="Pesquisar..."
+      <input id="search" type="search" placeholder="Pesquisar..."
+        class="
+          mt-3
+          w-full
+          max-w-md
+          rounded-md
+          border
+          border-amber-600/30
+          bg-[rgb(30,19,11)]
+          px-5
+          py-3
+          text-amber-100
+          placeholder:text-amber-600/20
+          outline-none
+          transition
+          focus:border-red-400/50
+          focus:ring-1
+          focus:ring-red-400/20
+        "
       />
 
-      <p id="count" class="text-(--detail)"></p>
-
-      <div class="py-3"></div>
-
+      <p id="count" class="text-(--detail) text-[12px] mt-1 mb-7"></p>
       <div id="results"></div>
-
-      <div class="flex gap-3 items-center mt-4">
-        <button class="border px-3 py-1 rounded-sm" id="prev">Anterior</button>
+      <div class="flex gap-3 items-center mt-4 text-xs">
+        <button id="prev" class="
+          rounded-md
+          border
+          border-amber-600/25
+          bg-transparent
+          px-4
+          py-2
+          text-amber-300
+          transition
+          hover:border-red-400/40
+          hover:text-red-500
+          disabled:opacity-40
+          disabled:pointer-events-none
+          select-none
+          outline-none
+          focus:outline-none
+          focus:ring-0
+          active:outline-none
+          cursor-pointer
+        ">Anterior</button>
         <span id="pageInfo"></span>
-        <button class="border px-3 py-1 rounded-sm" id="next">Próxima</button>
+        <button id="next" class="
+          rounded-md
+          border
+          border-amber-600/25
+          bg-transparent
+          px-4
+          py-2
+          text-amber-300
+          transition
+          hover:border-red-400/40
+          hover:text-red-500
+          disabled:opacity-40
+          disabled:pointer-events-none
+          select-none
+              outline-none
+              focus:outline-none
+              focus:ring-0
+              active:outline-none
+              cursor-pointer
+        ">Próxima</button>
       </div>
     </main>
 
@@ -161,13 +209,30 @@ const items = [
         results.innerHTML = pageItems
           .map(
             (item) => `
-              <article class="border rounded-sm py-3 px-7 my-4">
-                <h2>
-                  ${highlight(item.tipo, query)}
-                  ${highlight(item.titulo, query)} — Tom ${item.tom}
-                </h2>
+              <article class="
+                group
+                my-5
+                rounded-lg
+                border border-amber-500/20
+                bg-amber-950/10
+                p-6
+                transition-colors
+                hover:border-amber-400/40
+                hover:bg-amber-950/20
+              ">
+                <header class="mb-4">
+                  <p class="mb-2 text-[11px] uppercase tracking-[.22em] text-amber-500/60">
+                    ${highlight(item.tipo, query)} — Tom ${item.tom}
+                  </p>
 
-                <p class="text-justify">
+                  <h2 class="text-[1.2rem] tracking-tight text-red-300/90 leading-snug">
+                    ${highlight(item.titulo, query)}
+                  </h2>
+                </header>
+
+                <div class="my-4 h-px w-10 bg-amber-500/30"></div>
+
+                <p class="leading-9 text-[1.02rem]text-amber-100/90">
                   ${highlight(item.versos, query)}
                 </p>
               </article>

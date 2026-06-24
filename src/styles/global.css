@@ -1,10 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: rgb(28,19,10);
-  --primary: var(--color-red-500);
-  --secondary: rgb(221,192,122);
+  --background: #140b07;
+  --surface: #1c130a;
+  --primary: var(--color-red-700);
+  --secondary: #e3c98d;
   --detail: var(--color-stone-700);
+  --muted: #8f7b5a;
+  --border: rgb(180 140 70 / 0.18);
+}
+
+* {
+  font-family: 'Noto Serif';
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--secondary);
+  line-height: 1.8;
+}
+
+
+h1, h2 {
+  color: var(--primary);
+}
+
+mark {
+  background: rgb(196 74 74 / .18);
+  color: inherit;
+  padding: 0 .1em;
+  border-radius: 2px;
+}
+
+i.ref {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media print {
+  i.ref {
+    color: grey;
+    font-size: 9px;
+  }
+}
+
+/* From https://azbyka.ru */
+@font-face {
+  font-family: 'Triodion';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url(/slujba/fonts/triodion-ieUcs.eot);
+  src: url('/slujba/fonts/triodion-ieUcs.eot?#iefix') format('embedded-opentype'),
+       url(/slujba/fonts/triodion-ieUcs.woff2) format('woff2'),
+       url(/slujba/fonts/triodion-ieUcs.woff) format('woff'),
+       url(/slujba/fonts/triodion-ieUcs.ttf) format('truetype'),
+       url('/slujba/fonts/triodion-ieUcs.svg#triodion-ieUcs') format('svg');
+}
+
+.slavonic {
+  font-family: "Triodion";
 }
 
 @font-face {
@@ -49,60 +105,6 @@
   font-style: italic;
 }
 
-* {
-  font-family: 'Noto Serif';
-  font-weight: normal;
-}
-
-h1, strong {
-  font-weight: bold;
-}
-
 .light {
   font-family: 'Noto Serif Light';
-}
-
-body {
-  background-color: var(--background);
-  color: var(--secondary);
-}
-
-/* From https://azbyka.ru */
-@font-face {
-  font-family: 'Triodion';
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url(/slujba/fonts/triodion-ieUcs.eot);
-  src: url('/slujba/fonts/triodion-ieUcs.eot?#iefix') format('embedded-opentype'),
-       url(/slujba/fonts/triodion-ieUcs.woff2) format('woff2'),
-       url(/slujba/fonts/triodion-ieUcs.woff) format('woff'),
-       url(/slujba/fonts/triodion-ieUcs.ttf) format('truetype'),
-       url('/slujba/fonts/triodion-ieUcs.svg#triodion-ieUcs') format('svg');
-}
-
-.slavonic {
-  font-family: "Triodion";
-}
-
-h1, h2 {
-  color: var(--primary);
-}
-
-i.s {
-  font-family: "Triodion";
-  font-style: normal;
-  font-size: 1.3em;
-}
-
-i.ref {
-  color: var(--detail);
-  font-size: 12px;
-}
-
-@media print {
-  i.ref {
-    color: grey;
-    font-size: 9px;
-  }
 }
