@@ -1,19 +1,28 @@
 ---
 import "../styles/global.css";
 import config from "../../config.json";
+import referenciasRessurecionais from "../data/hinos-referencia.json";
 import troparios from "../data/troparios.json";
 import kontakia from "../data/kondakions.json";
 import prokimenos from "../data/prokimenos.json";
 import versos from "../data/versos.json";
 import versosComunhao from "../data/versos-comunhao.json";
 
+let previousTom = config.tom;
+
 const entrada = [
   ...config.troparios_ids.map((id) => {
     const t = troparios[id];
     if (!t) throw new Error(`Tropário inválido: ${id}`);
 
+    const showRef =
+      t.titulo != "Ressurrecional" &&
+      t.tom !== previousTom;
+    previousTom = t.tom;
+
     return {
       tipo: "tropario",
+      showRef,
       ...t
     };
   }),
@@ -22,8 +31,12 @@ const entrada = [
     const k = kontakia[id];
     if (!k) throw new Error(`Kondákio inválido: ${id}`);
 
+    const showRef = k.tom !== previousTom;
+    previousTom = k.tom;
+
     return {
       tipo: "kondakion",
+      showRef,
       ...k
     };
   })
@@ -72,13 +85,13 @@ const versoComunhao = versosComunhao[config.versos_comunhao_id];
           hidden md:inline
           select-none outline-none
           text-red-500 hover:text-amber-500 transition
-          " onclick="window.print()">🖶 Imprimir
+          " onclick="window.print()">&#128438; Imprimir
         </a>
         <a class="
           md:hidden inline
           select-none outline-none
           text-red-500 hover:text-amber-500 transition
-          " onclick="window.print()">🖶 Salvar PDF
+          " onclick="window.print()">&DownArrowBar; Salvar PDF
         </a>
         <a class="
           select-none outline-none
@@ -108,6 +121,12 @@ const versoComunhao = versosComunhao[config.versos_comunhao_id];
                   Tropário {item.titulo} — Tom {item.tom}
                 </p>
 
+                {item.showRef && (
+                  <p class="text-center text-xs print:text-[9px] italic text-(--detail)">
+                    {referenciasRessurecionais[item.tom]}
+                  </p>
+                )}
+
                 <p class="text-justify">{item.versos}</p>
               </>
             )}
@@ -133,6 +152,12 @@ const versoComunhao = versosComunhao[config.versos_comunhao_id];
                 <p class="text-center italic text-(--primary) pt-3">
                   Kondákio {item.titulo} — Tom {item.tom}
                 </p>
+
+                {item.showRef && (
+                  <p class="text-center text-xs print:text-[9px] italic text-(--detail)">
+                    {referenciasRessurecionais[item.tom]}
+                  </p>
+                )}
 
                 <p class="text-justify">{item.versos}</p>
               </>
