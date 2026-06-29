@@ -57,7 +57,7 @@ const ultimoKondakion =
     : null;
 
 const prokimeno1 = prokimenos[config.prokimeno1_id];
-const prokimenos2 = config.prokimeno2_id
+const prokimeno2 = config.prokimeno2_id
   ? prokimenos[config.prokimeno2_id]
   : null;
 
@@ -174,10 +174,12 @@ const versoComunhao = versosComunhao[config.versos_comunhao_id];
         <p class="mt-3 md:mt-0"><i class="text-(--primary)">Tom {prokimeno1.tom}:</i>
           {prokimeno1.versos["1"]} / {prokimeno1.versos["2"]} <i class="ref">{prokimeno1.ref}</i>
         </p>
-        <p>{prokimenoVerso.verso} <i class="ref">{prokimenoVerso.ref}</i></p>
-        {prokimenos2 && (
-        <p><i class="text-(--primary)">Tom {prokimenos2.tom}:</i>
-          {prokimenos2.versos["1"]} / {prokimenos2.versos["2"]} <i class="ref">{prokimenos2.ref}</i>
+
+        <p class="my-1">{prokimenoVerso.verso} <i class="ref">{prokimenoVerso.ref}</i></p>
+
+        {prokimeno2 && (
+        <p><i class="text-(--primary)">Tom {prokimeno2.tom}:</i>
+          {prokimeno2.versos["1"]} / {prokimeno2.versos["2"]} <i class="ref">{prokimeno2.ref}</i>
         </p>
         )}
       </section>
@@ -187,14 +189,14 @@ const versoComunhao = versosComunhao[config.versos_comunhao_id];
         <h2 class="!font-bold pt-3 border-b md:border-0">Aleluia</h2>
 
         <p class="mt-3 md:mt-0">
-          <i class="text-(--primary)">Tom {config.aleluia1.tom}:</i>{" "}
+          <i class="text-(--primary)">Tom {config.aleluia1.tom}:</i>
           {aleluia1.verso} <i class="ref"> {aleluia1.ref}</i>
         </p>
 
-        <p>{aleluia2.verso} <i class="ref"> {aleluia2.ref}</i></p>
+        <p class="my-1">{aleluia2.verso} <i class="ref"> {aleluia2.ref}</i></p>
 
         <p>
-          <i class="text-(--primary)">Tom {config.aleluia3.tom}:</i>{" "}
+          {config.aleluia3.tom != config.aleluia1.tom && (<i class="text-(--primary)">Tom {config.aleluia3.tom}:</i>)}
           {aleluia3.verso} <i class="ref"> {aleluia3.ref}
         </p>
       </section>
