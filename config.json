@@ -1,13 +1,13 @@
 {
-  "titulo": "4º Domingo após o Pentecostes / Santo Hierarca Metropolita Jonas de Moscou",
-  "tom": "3",
-  "troparios_ids": ["d3", "zinaida_filonila", "jonas_moscou"],
-  "kontakions_ids": ["d3", "zinaida_filonila", "jonas_moscou", "admiravel_protetora"],
-  "prokimeno1_id": "d3",
-  "prokimeno_verso_id": "sl47-2",
-  "prokimeno2_id": "sl115-15",
-  "aleluia1" : {"id": "sl30-2", "tom": "3"},
-  "aleluia2" : {"id": "sl30-3", "tom": "3"},
-  "aleluia3" : {"id": "sl131-9", "tom": "2"},
-  "versos_comunhao_id": "justos_memoria_rumores"
+  "titulo": "5º Domingo após o Pentecostes / Santo Hieromártir Eusébio de Samósata",
+  "tom": "4",
+  "troparios_ids": ["d4", "zinaida_filonila", "eusebio_samosata"],
+  "kontakions_ids": ["d4", "zinaida_filonila", "eusebio_samosata", "admiravel_protetora"],
+  "prokimeno1_id": "d4",
+  "prokimeno_verso_id": "sl103-1",
+  "prokimeno2_id": null,
+  "aleluia1" : {"id": "aleluia", "tom": "4"},
+  "aleluia2" : {"id": "sl44-5", "tom": "4"},
+  "aleluia3" : {"id": "sl44-8", "tom": "4"},
+  "versos_comunhao_id": "louvai"
 }
