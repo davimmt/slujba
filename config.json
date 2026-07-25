@@ -1,13 +1,13 @@
 {
-  "titulo": "6º Domingo após o Pentecostes / Os Santos e Gloriosos Apóstolos Pedro e Paulo",
-  "tom": "5",
-  "troparios_ids": ["d5", "pedro_paulo"],
-  "kontakions_ids": ["d5", "pedro_paulo", "admiravel_protetora"],
-  "prokimeno1_id": "d5",
-  "prokimeno_verso_id": "sl11-2",
-  "prokimeno2_id": "sl18-5",
-  "aleluia1" : {"id": "sl88-2", "tom": "5"},
-  "aleluia2" : {"id": "sl88-3", "tom": "5"},
-  "aleluia3" : {"id": "sl88-6", "tom": "1"},
-  "versos_comunhao_id": "som_palavras"
+  "titulo": "8º Domingo após o Pentecostes / Os Santos Padres dos Seis Primeiros Concílios Ecumênicos",
+  "tom": "7",
+  "troparios_ids": ["d7", "padres_primeiros_concilios"],
+  "kontakions_ids": ["d7", "padres_primeiros_concilios", "admiravel_protetora"],
+  "prokimeno1_id": "d7",
+  "prokimeno_verso_id": "sl28-1",
+  "prokimeno2_id": "dan3-26",
+  "aleluia1" : {"id": "sl91-2", "tom": "7"},
+  "aleluia2" : {"id": "sl91-3", "tom": "7"},
+  "aleluia3" : {"id": "sl49-1", "tom": "1"},
+  "versos_comunhao_id": "justos_louvor"
 }
