@@ -73,5 +73,15 @@
     "titulo": "aos Santos Padres dos Seis Primeiros Concílios Ecumênicos",
     "tom": "8",
     "versos": "Tu és sumamente glorificado, ó Cristo nosso Deus, / que estabeleceste nossos santos pais como estrelas luminosas sobre a terra, / e através deles nos conduziste à verdadeira Fé. // Ó Misericordiosíssimo, glória a Ti."
+  },
+  "serafim_sarov" : {
+    "titulo": "a São Serafim de Sarov",
+    "tom": "4",
+    "versos": "Desde a tua juventude tu amaste Cristo, ó bendito; / e incendiado pelo desejo de servir somente a Ele, tu lutaste no deserto em orações e trabalhos incessantes; / e, adquirindo o amor de Cristo, com compunção de coração, tu foste visto como o amado favorito da Mãe de Deus. / Por isso, nós clamamos a ti: // por tuas súplicas, salva-nos, ó venerável Pai!"
+  },
+  "profeta_elias" : {
+    "titulo": "ao Santo e Glorioso Profeta Elias",
+    "tom": "4",
+    "versos": "Anjo encarnado, cume dos profetas, / precursor da vinda de Cristo, / o glorioso Elias enviou do alto a graça a Eliseu, / ele afasta as enfermidades e purifica os leprosos. // Por isso, ele derrama curas sobre aqueles que o honram."
   }
 }

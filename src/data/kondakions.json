@@ -78,5 +78,20 @@
     "titulo": "aos Santos Padres dos Seis Primeiros Concílios Ecumênicos",
     "tom": "8",
     "versos": "A pregação dos apóstolos e as doutrinas dos pais confirmaram a única Fé da Igreja. / E, vestida do manto da verdade, tecido da mais alta teologia, // Ela glorifica o grande mistério da piedade."
+  },
+  "serafim_sarov" : {
+    "titulo": "a São Serafim de Sarov",
+    "tom": "2",
+    "versos": "Desprezando a beleza do mundo e a corrupção dele, / tu fizeste a tua morada no Mosteiro de Sarov. / E tendo vivido lá como um anjo, tu te tornaste para muitos uma via de salvação. / Por essa razão Cristo te glorificou, ó padre Serafim, / e te enriqueceu com o dom de curas e milagres. / Por isso, nós cantamos a ti: // Rejubila, ó nosso venerável padre Serafim!"
+  },
+  "serafim_sarov" : {
+    "titulo": "a São Serafim de Sarov",
+    "tom": "2",
+    "versos": "Desprezando a beleza do mundo e a corrupção dele, / tu fizeste a tua morada no Mosteiro de Sarov. / E tendo vivido lá como um anjo, tu te tornaste para muitos uma via de salvação. / Por essa razão Cristo te glorificou, ó padre Serafim, / e te enriqueceu com o dom de curas e milagres. / Por isso, nós cantamos a ti: // Rejubila, ó nosso venerável padre Serafim!"
+  },
+  "profeta_elias" : {
+    "titulo": "ao Santo e Glorioso Profeta Elias",
+    "tom": "2",
+    "versos": "Ó renomado Elias, / profeta e vidente das grandes obras de Deus, / que pela tua palavra detiveste mesmo as chuvas: // roga por nós ao único Amigo dos homens."
   }
 }

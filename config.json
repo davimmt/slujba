@@ -1,13 +1,13 @@
 {
-  "titulo": "8º Domingo após o Pentecostes / Os Santos Padres dos Seis Primeiros Concílios Ecumênicos",
-  "tom": "7",
-  "troparios_ids": ["d7", "padres_primeiros_concilios"],
-  "kontakions_ids": ["d7", "padres_primeiros_concilios", "admiravel_protetora"],
-  "prokimeno1_id": "d7",
-  "prokimeno_verso_id": "sl28-1",
-  "prokimeno2_id": "dan3-26",
-  "aleluia1" : {"id": "sl91-2", "tom": "7"},
-  "aleluia2" : {"id": "sl91-3", "tom": "7"},
-  "aleluia3" : {"id": "sl49-1", "tom": "1"},
-  "versos_comunhao_id": "justos_louvor"
+  "titulo": "8º Domingo após o Pentecostes / O Santo e Glorioso Profeta Elias",
+  "tom": "8",
+  "troparios_ids": ["d8", "profeta_elias"],
+  "kontakions_ids": ["d8", "profeta_elias", "admiravel_protetora"],
+  "prokimeno1_id": "d8",
+  "prokimeno_verso_id": "sl75-2",
+  "prokimeno2_id": "sl109-4",
+  "aleluia1" : {"id": "sl94-1", "tom": "8"},
+  "aleluia2" : {"id": "sl94-2", "tom": "8"},
+  "aleluia3" : {"id": "sl98-6", "tom": "4"},
+  "versos_comunhao_id": "justos_memoria_rumores"
 }
