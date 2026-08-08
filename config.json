@@ -1,13 +1,13 @@
 {
-  "titulo": "9º Domingo após o Pentecostes / O Santo e Glorioso Profeta Elias",
-  "tom": "8",
-  "troparios_ids": ["d8", "profeta_elias"],
-  "kontakions_ids": ["d8", "profeta_elias", "admiravel_protetora"],
-  "prokimeno1_id": "d8",
-  "prokimeno_verso_id": "sl75-2",
-  "prokimeno2_id": "sl109-4",
-  "aleluia1" : {"id": "sl94-1", "tom": "8"},
-  "aleluia2" : {"id": "sl94-2", "tom": "8"},
-  "aleluia3" : {"id": "sl98-6", "tom": "4"},
+  "titulo": "10º Domingo após o Pentecostes / O Santo e Grande Mártir Curador Panteleimon",
+  "tom": "1",
+  "troparios_ids": ["d1", "zinaida_filonila", "panteleimon"],
+  "kontakions_ids": ["d1", "zinaida_filonila", "panteleimon", "admiravel_protetora"],
+  "prokimeno1_id": "d1",
+  "prokimeno_verso_id": "sl32-1",
+  "prokimeno2_id": "sl67-36",
+  "aleluia1" : {"id": "sl17-48", "tom": "1"},
+  "aleluia2" : {"id": "sl17-51", "tom": "1"},
+  "aleluia3" : {"id": "sl91-12", "tom": "4"},
   "versos_comunhao_id": "justos_memoria_rumores"
 }
