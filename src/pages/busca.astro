@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import troparios from "../data/troparios.json";
 import kontakia from "../data/kondakions.json";
+import dogmatica from "../data/dogmatica.json";
 
 const items = [
   ...Object.entries(troparios).map(([id, item]) => ({
@@ -12,6 +13,11 @@ const items = [
   ...Object.entries(kontakia).map(([id, item]) => ({
     id,
     tipo: "Kondákion",
+    ...item,
+  })),
+  ...Object.entries(dogmatica).map(([id, item]) => ({
+    id,
+    tipo: "Dogmática",
     ...item,
   })),
 ];
