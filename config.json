@@ -1,13 +1,13 @@
 {
-  "titulo": "10º Domingo após o Pentecostes / O Santo e Grande Mártir Curador Panteleimon",
-  "tom": "1",
-  "troparios_ids": ["d1", "zinaida_filonila", "panteleimon"],
-  "kontakions_ids": ["d1", "zinaida_filonila", "panteleimon", "admiravel_protetora"],
-  "prokimeno1_id": "d1",
-  "prokimeno_verso_id": "sl32-1",
-  "prokimeno2_id": "sl67-36",
-  "aleluia1" : {"id": "sl17-48", "tom": "1"},
-  "aleluia2" : {"id": "sl17-51", "tom": "1"},
-  "aleluia3" : {"id": "sl91-12", "tom": "4"},
-  "versos_comunhao_id": "justos_memoria_rumores"
+  "titulo": "11º Domingo após o Pentecostes / Santos Isaac, Dálmacio e Fausto",
+  "tom": "2",
+  "troparios_ids": ["d2", "zinaida_filonila", "santos_padres"],
+  "kontakions_ids": ["d2", "zinaida_filonila", "isaac_dalmacio_fausto", "admiravel_protetora"],
+  "prokimeno1_id": "d2",
+  "prokimeno_verso_id": "sl117-18",
+  "prokimeno2_id": null,
+  "aleluia1" : {"id": "aleluia", "tom": "2"},
+  "aleluia2" : {"id": "sl19-1", "tom": "2"},
+  "aleluia3" : {"id": "sl19-9", "tom": "2"},
+  "versos_comunhao_id": "louvai"
 }
