@@ -1,13 +1,14 @@
 {
-  "titulo": "11º Domingo após o Pentecostes / Santos Isaac, Dálmacio e Fausto",
-  "tom": "2",
-  "troparios_ids": ["d2", "zinaida_filonila", "santos_padres"],
-  "kontakions_ids": ["d2", "zinaida_filonila", "isaac_dalmacio_fausto", "admiravel_protetora"],
-  "prokimeno1_id": "d2",
-  "prokimeno_verso_id": "sl117-18",
-  "prokimeno2_id": null,
-  "aleluia1" : {"id": "aleluia", "tom": "2"},
-  "aleluia2" : {"id": "sl19-1", "tom": "2"},
-  "aleluia3" : {"id": "sl19-9", "tom": "2"},
-  "versos_comunhao_id": "louvai"
+  "titulo": "12º Domingo após o Pentecostes / Santo Mártir e Arquidiácono Lourenço / Pós-festa da Transfiguração",
+  "tom": "3",
+  "troparios_ids": ["d3", "transfiguracao", "zinaida_filonila", "lourenco"],
+  "kontakions_ids": ["d3", "zinaida_filonila", "lourenco", "transfiguracao"],
+  "prokimeno1_id": "d3",
+  "prokimeno_verso_id": "sl46-2",
+  "prokimeno2_id": "d4",
+  "aleluia1" : {"id": "sl30-2", "tom": "3"},
+  "aleluia2" : {"id": "sl30-3", "tom": "3"},
+  "aleluia3" : {"id": "sl88-12", "tom": "8"},
+  "megalinario": "transfiguracao",
+  "versos_comunhao_id": "luz_face"
 }
