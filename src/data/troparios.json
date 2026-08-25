@@ -94,8 +94,8 @@
     "tom": "4",
     "versos": "Ó Senhor Deus de nossos pais, / que sempre nos trata com ternura, / não afaste de nós a Tua misericórdia, / mas pelas suas intercessões // guia nossa vida em paz."
   },
-  "santa_cruz": {
-    "titulo": "da Santa Cruz",
+  "elevacao_da_cruz": {
+    "titulo": "da Elevação da Preciosa e Vivificante Cruz do Senhor",
     "tom": "1",
     "versos": "Salva, Senhor, o Teu povo / e abençoa a Tua herança; / concede aos Cristãos Ortodoxos / a vitória sobre os seus adversários / e pela Tua Cruz // protege as Tuas cidades."
   },
@@ -109,7 +109,7 @@
     "tom": "6 (Dogmática)",
     "versos": "Rei dos Céus, Consolador, / Espírito de Verdade, / Tu que estás presente em tudo e enches tudo, / Tesouro de bens e Doador da vida, / vem e habita em nós; / purifica-nos de toda mácula / e salva, ó Bondoso, // as nossas almas."
   },
-  "prologo_benevolencia": {
+  "apresentacao_mae_de_deus": {
     "titulo": "da Apresentação da Mãe de Deus ao Templo de Jerusalém",
     "tom": "4",
     "versos": "Hoje é o prólogo da benevolência de Deus / e a proclamação antecipada da salvação dos homens. / No templo de Deus a Virgem é apresentada / para anunciar a todos os homens a vinda do Cristo. / Em sua honra nós também com plena voz cantamos-lhe: // rejubila-te, ó Virgem, em quem se realiza o plano do Criador."
@@ -123,5 +123,50 @@
     "titulo": "ao Santo Mártir e Arquidiácono Lourenço",
     "tom": "4",
     "versos": "Em seus sofrimentos, ó Senhor, / o Teu mártir Lourenço recebeu de Ti, nosso Deus, uma coroa incorruptível; / pois, revestido da Tua força, / ele desprezou os seus tormentos e esmagou a frágil audácia dos demônios. // Pelas suas súplicas, salva as nossas almas."
+  },
+  "pentecostes": {
+    "titulo": "do Domingo de Pentecostes",
+    "tom": "8",
+    "versos": "Bendito sejas Tu, ó Cristo nosso Deus, que fizeste sábios os pescadores, enviando-lhes o Espírito Santo e por eles conquistando o mundo todo. // Ó Amigo do homem, glória a Ti!"
+  },
+  "dormicao": {
+    "titulo": "da Dormição da Santíssima Mãe de Deus",
+    "tom": "1",
+    "versos": "Ao dar à luz, preservaste a virgindade, na Tua Dormição, não abandonaste o mundo, ó Mãe de Deus. Tu foste transferida para a vida sendo a Mãe da Vida e, pelas Tuas orações, resgatas as nossas almas da morte."
+  },
+  "domingo_de_ramos": {
+    "titulo": "do Domingo de Ramos",
+    "tom": "1",
+    "versos": "Confirmando a Ressurreição universal, ressuscitaste Lázaro dos mortos antes da Tua paixão, Ó Cristo Deus. Como as crianças com os ramos da vitória, cantamos a Ti, Vencedor da morte: Hosana nas alturas, bendito o que vem em nome do Senhor."
+  },
+  "ascensao": {
+    "titulo": "da Ascensão do Senhor",
+    "tom": "4",
+    "versos": "Tu foste elevado em glória, ó Cristo nosso Deus, enchendo de alegria Teus discípulos com a promessa do Espírito Santo e confirmando-os, pois Tu és o Filho de Deus e Salvador do mundo."
+  },
+  "encontro_do_senhor": {
+    "titulo": "do Encontro do Senhor",
+    "tom": "1",
+    "versos": "Alegra-te, cheia de graça, Ó Virgem Mãe de Deus, pois de Ti levantou-Se o Sol de Justiça, Cristo nosso Deus, iluminando aqueles que estão nas trevas. Alegra-te também, justo Ancião, que recebeste em teus braços o Redentor de nossas almas, que nos concede a Ressurreição."
+  },
+  "anunciacao": {
+    "titulo": "da Anunciação da Santíssima Mãe de Deus",
+    "tom": "4",
+    "versos": "É hoje o começo da nossa salvação e a manifestação do mistério eterno. O Filho de Deus torna-Se Filho da Virgem e Gabriel anuncia a boa nova da graça. Por isso, cantamos com ele à Mãe de Deus: \"Alegra-te, ó cheia de graça, o Senhor está contigo.\""
+  },
+  "natividade": {
+    "titulo": "da Natividade de Nosso Senhor Deus e Salvador Jesus Cristo",
+    "tom": "4",
+    "versos": "O Teu nascimento, ó Cristo nosso Deus, fez brilhar no mundo a luz do conhecimento. Nela os adoradores dos astros aprenderam de um astro a adorar-Te, Sol de Justiça, e a reconhecer-Te como o Oriente vindo do alto. Senhor, glória a Ti."
+  },
+  "teofania": {
+    "titulo": "da Teofania de Nosso Senhor Deus e Salvador Jesus Cristo",
+    "tom": "1",
+    "versos": "Senhor, em Teu Batismo no Jordão foi revelada a adoração à Trindade, pois a voz de Deus Pai deu testemunho de Ti, chamando-Te Filho Bem-amado e o Espírito, sob a forma de pomba, confirmou estas palavras. Ó Cristo Deus, que manifestou-Se e iluminaste o mundo, glória a Ti!"
+  },
+  "natividade_mae_de_deus": {
+    "titulo": "da Natividade da Santíssima Mãe de Deus",
+    "tom": "4",
+    "versos": "O Teu Nascimento, ó Virgem Mãe de Deus, proclama alegria ao universo inteiro: pois de Ti se levantou o Sol de Justiça, Cristo nosso Deus, e anulando a maldição e concede-nos a benção, e aniquilando a morte, concede-nos a vida eterna."
   }
 }

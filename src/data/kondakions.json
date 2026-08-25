@@ -104,7 +104,7 @@
     "tom": "2",
     "versos": "Com hinos louvemos a Isaac, Dálmacio e Fausto, / que, como faróis, resplandeceram no jejum / e afastaram com a fé as heresias; // pois são santos de Deus que intercedem por nós."
   },
-  "templo_purissimo": {
+  "apresentacao_mae_de_deus": {
     "titulo": "da Apresentação da Mãe de Deus ao Templo de Jerusalém",
     "tom": "4",
     "versos": "O templo puríssimo do Salvador, / Sua preciosa câmara nupcial, / Tesouro sagrado da glória de Deus. / É hoje conduzida a casa do Senhor, / transportando nela a graça do Espírito Divino. / E diante dela os anjos de Deus clamam: // “é este o tabernáculo celeste!"
@@ -118,5 +118,55 @@
     "titulo": "ao Santo Mártir e Arquidiácono Lourenço",
     "tom": "2",
     "versos": "Incendiando o teu coração com o fogo divino, / reduziste totalmente a cinzas o fogo das paixões, / ó mártir portador de Deus, Lourenço, / tu que és a fortaleza dos atletas; / em meio aos teus sofrimentos, clamaste com fé: // \"Nada poderá separar-me do amor de Cristo\"."
+  },
+  "pentecostes": {
+    "titulo": "do Domingo de Pentecostes",
+    "tom": "8",
+    "versos": "Quando, outrora, Ele desceu à terra, o Altíssimo confundiu as línguas e dispersou os povos. Agora que distribui as línguas de fogo, Ele chama todos os homens à unidade. Glorifiquemos, a uma só voz, o Espírito Santo."
+  },
+  "dormicao": {
+    "titulo": "da Dormição da Santíssima Mãe de Deus",
+    "tom": "2",
+    "versos": "Nem o túmulo nem a morte tiveram poder sobre a Mãe de Deus, incansável nas orações, inquebrantável esperança em suas intercessões. Pois sendo a Mãe da Vida foi transferida para vida por Aquele que habitou em seu ventre virginal."
+  },
+  "domingo_de_ramos": {
+    "titulo": "do Domingo de Ramos",
+    "tom": "6",
+    "versos": "No trono, no céu; na terra, levado por um jumento, ó Cristo Deus, recebe o louvor dos anjos e os hinos das crianças que Te exclamam: \"Bendito és Tu que vens restabelecer Adão\"."
+  },
+  "ascensao": {
+    "titulo": "da Ascensão do Senhor",
+    "tom": "6",
+    "versos": "Tendo cumprido o plano providencial a nosso respeito e tendo unido a criatura terrestre aos habitantes dos Céus, Tu foste elevado em Glória, ó Cristo nosso Deus, não Te afastando, mas permanecendo com aqueles que Te amam e a quem Tu mesmo disseste: \"Eu estou convosco e ninguém pode algo contra vós\"."
+  },
+  "encontro_do_senhor": {
+    "titulo": "do Encontro do Senhor",
+    "tom": "1",
+    "versos": "Com Teu nascimento, santificaste o ventre virginal e abençoaste, como Deus, os braços de Simeão, ó Cristo Deus. Salvou-nos, concedendo a paz às cidades e fortalecendo o povo que Tu amaste, ó único Amigo do homem."
+  },
+  "anunciacao": {
+    "titulo": "da Anunciação da Santíssima Mãe de Deus",
+    "tom": "8",
+    "versos": "A Ti, Protetora Invencível, nós Teus servos, dedicamos uma festa de vitória e ação de graças por termos sido resgatados dos nossos sofrimentos, ó Mãe de Deus. Mas como Teu poder é invencível livra-nos de todos os perigos para que possamos clamar a Ti: Rejubila, Esposa Inesposada."
+  },
+  "natividade": {
+    "titulo": "da Natividade de Nosso Senhor Deus e Salvador Jesus Cristo",
+    "tom": "3",
+    "versos": "Hoje a virgem dá à luz Aquele que é transcendente em essência e a terra é uma gruta ao Inacessível. Os anjos e os pastores glorificam-No e os Magos com a estrela avançam. Tu nasceste para nós, ó Menino, Deus Pré Eterno."
+  },
+  "teofania": {
+    "titulo": "da Teofania de Nosso Senhor Deus e Salvador Jesus Cristo",
+    "tom": "4",
+    "versos": "Manifestou-se hoje a todo o universo, Ó Senhor, e a Tua Luz mostrou-se a nós que reconhecendo-Te cantamos: Tu vieste e Te manifestaste, ó Luz Inacessível."
+  },
+  "natividade_mae_de_deus": {
+    "titulo": "da Natividade da Santíssima Mãe de Deus",
+    "tom": "4",
+    "versos": "Com o Teu santo nascimento, ó Puríssima, Joaquim e Ana foram libertos da esterilidade, e Adão e Eva da corrupção da morte. Nós, o Teu povo liberto da culpa do pecado, celebramos cantando a Ti: Aquela que era estéril deu à luz a Mãe de Deus, que nutre a nossa vida."
+  },
+  "elevacao_da_cruz": {
+    "titulo": "da Elevação da Preciosa e Vivificante Cruz do Senhor",
+    "tom": "4",
+    "versos": "Tu que foste voluntariamente elevado sobre a Cruz, concede Tua misericórdia ao Teu novo povo que se gloria no Teu nome, ó Cristo Deus; concede aos Cristãos Ortodoxos alegria em Teu poder, dando-lhes a vitória contra os inimigos, concedendo-lhes um troféu invencível, Tua arma de paz."
   }
 }
