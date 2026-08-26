@@ -135,20 +135,44 @@ const megalinario = megalinarios[config.megalinario];
 
             {item.tipo === "kondakion" && (
               <>
-                {idx === penultimoKondakion && (
-                  <div class="my-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
+                {kontakiaIndices.length === 1 && (
+                  <>
+                    <div class="my-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
+
                     <h2 class="text-(--primary) text-center md:text-justify print:pt-3">
                       Glória ao Pai e ao Filho e ao Espírito Santo.
                     </h2>
-                  <div class="mt-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
-                )}
 
-                {idx === ultimoKondakion && (
-                  <div class="my-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
                     <h2 class="text-(--primary) text-center md:text-justify print:pt-3">
                       E agora e sempre e pelos séculos dos séculos. Amém.
                     </h2>
-                  <div class="mt-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
+
+                    <div class="mt-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
+                  </>
+                )}
+
+                {kontakiaIndices.length > 1 && idx === penultimoKondakion && (
+                  <>
+                    <div class="my-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
+
+                    <h2 class="text-(--primary) text-center md:text-justify print:pt-3">
+                      Glória ao Pai e ao Filho e ao Espírito Santo.
+                    </h2>
+
+                    <div class="mt-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
+                  </>
+                )}
+
+                {kontakiaIndices.length > 1 && idx === ultimoKondakion && (
+                  <>
+                    <div class="my-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
+
+                    <h2 class="text-(--primary) text-center md:text-justify print:pt-3">
+                      E agora e sempre e pelos séculos dos séculos. Amém.
+                    </h2>
+
+                    <div class="mt-4 h-px w-10 bg-amber-500/30 mx-auto md:mx-0 print:hidden"></div>
+                  </>
                 )}
 
                 <p class="text-center italic text-(--primary) pt-3">
