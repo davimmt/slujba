@@ -1,6 +1,7 @@
 {
   "titulo": "13º Domingo após Pentecostes / Mártir Míron de Cízico / Pós-festa da Dormição",
   "tom": "4",
+  "antifonas_ids": [],
   "troparios_ids": ["d4", "dormicao", "zinaida_filonila"],
   "kontakions_ids": ["d4", "zinaida_filonila", "miron_cizico", "dormicao"],
   "prokimeno1_id": "d4",
