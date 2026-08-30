@@ -1,14 +1,14 @@
 {
-  "titulo": "Festa da Dormição da Mãe de Deus",
-  "tom": "3",
-  "troparios_ids": ["dormicao"],
-  "kontakions_ids": ["dormicao"],
-  "prokimeno1_id": "lc1-46",
-  "prokimeno_verso_id": "lc1-48",
-  "prokimeno2_id": null,
-  "aleluia1" : {"id": "aleluia", "tom": "2"},
-  "aleluia2" : {"id": "sl131-8", "tom": "2"},
-  "aleluia3" : {"id": "sl131-11", "tom": "2"},
+  "titulo": "13º Domingo após Pentecostes / Mártir Míron de Cízico / Pós-festa da Dormição",
+  "tom": "4",
+  "troparios_ids": ["d4", "dormicao", "zinaida_filonila"],
+  "kontakions_ids": ["d4", "zinaida_filonila", "miron_cizico", "dormicao"],
+  "prokimeno1_id": "d4",
+  "prokimeno_verso_id": "sl103-1",
+  "prokimeno2_id": "lc1-46",
+  "aleluia1" : {"id": "sl44-5", "tom": "4"},
+  "aleluia2" : {"id": "sl44-8", "tom": "4"},
+  "aleluia3" : {"id": "sl131-8", "tom": "2"},
   "megalinario": "dormicao",
-  "versos_comunhao_id": "tomarei_calice"
+  "versos_comunhao_id": "louvai_tomarei_calice"
 }
