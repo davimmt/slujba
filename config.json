@@ -1,15 +1,16 @@
 {
-  "titulo": "13º Domingo após Pentecostes / Mártir Míron de Cízico / Pós-festa da Dormição",
-  "tom": "4",
+  "titulo": "15º Domingo após o Pentecostes / Deposição do Precioso Cinto da Santíssima Mãe de Deus",
+  "tom": "6",
   "antifonas_ids": [],
-  "troparios_ids": ["d4", "dormicao", "zinaida_filonila"],
-  "kontakions_ids": ["d4", "zinaida_filonila", "miron_cizico", "dormicao"],
-  "prokimeno1_id": "d4",
-  "prokimeno_verso_id": "sl103-1",
+  "troparios_ids": ["d6", "cinto_mae_de_deus", "zinaida_filonila"],
+  "kontakions_ids": ["d6", "cinto_mae_de_deus"],
+  "prokimeno1_id": "d6",
+  "prokimeno_verso_id": "sl27-1",
   "prokimeno2_id": "lc1-46",
-  "aleluia1" : {"id": "sl44-5", "tom": "4"},
-  "aleluia2" : {"id": "sl44-8", "tom": "4"},
-  "aleluia3" : {"id": "sl131-8", "tom": "2"},
-  "megalinario": "dormicao",
+  "aleluia1": {"id": "sl90-1", "tom": "6"},
+  "aleluia2": {"id": "sl90-2", "tom": "6"},
+  "aleluia3": {"id": "sl131-8", "tom": "8"},
+  "megalinario": "",
   "versos_comunhao_id": "louvai_tomarei_calice"
 }
+
