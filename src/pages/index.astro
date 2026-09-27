@@ -3,12 +3,15 @@ import "../styles/global.css";
 import config from "../../config.json";
 import referenciasRessurecionais from "../data/hinos-referencia.json";
 import antifonas from "../data/antifonas.json";
+import versosEntrada from "../data/versos-entrada.json";
 import troparios from "../data/troparios.json";
 import kontakia from "../data/kondakions.json";
+import trisagios from "../data/trisagios.json";
 import prokimenos from "../data/prokimenos.json";
 import versos from "../data/versos.json";
 import megalinarios from "../data/megalinarios.json";
 import versosComunhao from "../data/versos-comunhao.json";
+import vimosALuzData from "../data/vimos-a-luz.json";
 
 let previousTom = config.tom;
 
@@ -84,6 +87,32 @@ const aleluia3 = versos[config.aleluia3.id];
 
 const versoComunhao = versosComunhao[config.versos_comunhao_id];
 const megalinario = megalinarios[config.megalinario];
+
+const versoEntrada =
+  config.verso_entrada_id && config.verso_entrada_id !== "padrao"
+    ? (versosEntrada[config.verso_entrada_id] ?? null)
+    : config.verso_entrada && config.verso_entrada !== "padrao"
+      ? (versosEntrada[config.verso_entrada] ?? config.verso_entrada)
+      : null;
+
+const trisagio =
+  config.trisagio_id && config.trisagio_id !== "padrao"
+    ? (trisagios[config.trisagio_id] ?? null)
+    : config.trisagio && config.trisagio !== "padrao"
+      ? (trisagios[config.trisagio] ?? config.trisagio)
+      : null;
+
+const vimosALuzId = config.vimos_a_luz_id ?? config.vimos_a_luz ?? null;
+const vimosALuz =
+  vimosALuzId && vimosALuzId !== "padrao"
+    ? (vimosALuzData[vimosALuzId] ??
+       (troparios[vimosALuzId]
+         ? {
+             subtitulo: `Tropário ${troparios[vimosALuzId].titulo} — Tom ${troparios[vimosALuzId].tom}`,
+             texto: troparios[vimosALuzId].versos
+           }
+         : { texto: vimosALuzId }))
+    : null;
 ---
 
 <html lang="pt-BR">
@@ -132,18 +161,42 @@ const megalinario = megalinarios[config.megalinario];
           </h2>
 
           {entradaAntifonas.map((item) => (
-            <div class="mt-3">
+            <div class="mt-4">
               <p class="text-center italic text-(--primary)">
                 {item.titulo}
               </p>
 
-              {item.versos.map((verso) => (
+              {item.refrao && (
                 <p class="text-justify mt-2">
-                <span class="text-(--primary)">{verso.numero}:</span> {verso.texto}
+                  <i class="text-(--primary)">Refrão:</i> {item.refrao}
+                </p>
+              )}
+
+              {item.versos?.map((verso) => (
+                <p class="text-justify mt-2">
+                  <span class="text-(--primary)">{verso.numero}:</span> {verso.texto}
                 </p>
               ))}
+
+              {item.gloria && (
+                <p class="text-justify mt-2 text-(--primary) italic">
+                  {item.gloria}
+                </p>
+              )}
             </div>
           ))}
+        </section>
+      )}
+
+      <!-- Verso de Entrada -->
+      {versoEntrada && (
+        <section>
+          <h2 class="!font-bold pt-7 print:pt-3 border-b md:border-0">
+            Verso de Entrada
+          </h2>
+          <p class="mt-3 md:mt-0 text-justify">
+            {versoEntrada}
+          </p>
         </section>
       )}
 
@@ -230,6 +283,26 @@ const megalinario = megalinarios[config.megalinario];
         ))}
       </section>
 
+      <!-- Triságio -->
+      {trisagio && (
+        <section>
+          <h2 class="!font-bold pt-7 print:pt-3 border-b md:border-0">
+            Em vez do Triságio
+          </h2>
+          {Array.isArray(trisagio) ? (
+            trisagio.map((linha, lIdx) => (
+              <p class={lIdx === 0 ? "mt-3 md:mt-0 text-justify" : "mt-2 text-justify"}>{linha}</p>
+            ))
+          ) : Array.isArray(trisagio?.texto) ? (
+            trisagio.texto.map((linha, lIdx) => (
+              <p class={lIdx === 0 ? "mt-3 md:mt-0 text-justify" : "mt-2 text-justify"}>{linha}</p>
+            ))
+          ) : (
+            <p class="mt-3 md:mt-0 text-justify whitespace-pre-line">{trisagio?.texto ?? trisagio}</p>
+          )}
+        </section>
+      )}
+
       <!-- Prokímenos -->
       <section>
         <h2 class="!font-bold pt-7 print:pt-3 border-b md:border-0">Prokímeno</h2>
@@ -292,6 +365,25 @@ const megalinario = megalinarios[config.megalinario];
         <h2 class="!font-bold pt-7 print:pt-3 border-b md:border-0">Verso da Comunhão</h2>
         <p class="mt-3 md:mt-0">{versoComunhao}</p>
       </section>
+
+      <!-- Em vez de Vimos a Luz verdadeira -->
+      {vimosALuz && (
+        <section>
+          <h2 class="!font-bold pt-7 print:pt-3 border-b md:border-0">
+            Em vez de <span class="italic">Vimos a Luz verdadeira,...</span>
+          </h2>
+
+          {vimosALuz.subtitulo && (
+            <p class="mt-3 md:mt-0 text-center italic text-(--primary)">
+              {vimosALuz.subtitulo}
+            </p>
+          )}
+
+          <p class="text-justify mt-2">
+            {vimosALuz.texto}
+          </p>
+        </section>
+      )}
 
     </main>
   </body>

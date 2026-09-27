@@ -19,5 +19,87 @@
         "texto": "Como templo da Vida, alcançaste a vida eterna; pois, tendo dado à luz a Vida hipostática, passaste pela morte para a Vida."
       }
     ]
+  },
+  "antifona1_cruz": {
+    "titulo": "Primeira Antífona — Tom 2",
+    "refrao": "Pelas orações da Mãe de Deus, ó Salvador, salva-nos.",
+    "versos": [
+      {
+        "numero": "1",
+        "texto": "Ó Deus, meu Deus, atende a mim; por que me desamparaste?"
+      },
+      {
+        "numero": "2",
+        "texto": "Longe da minha salvação estão as palavras dos meus pecados."
+      },
+      {
+        "numero": "3",
+        "texto": "Deus meu, clamarei de dia, e não me ouvirás; e de noite, e não haverá insensatez para mim."
+      },
+      {
+        "numero": "4",
+        "texto": "Mas Tu habitas no santuário, ó Louvor de Israel."
+      }
+    ],
+    "gloria": "Glória ao Pai e ao Filho e ao Espírito Santo, e agora e sempre e pelos séculos dos séculos. Amém."
+  },
+  "antifona2_cruz": {
+    "titulo": "Segunda Antífona — Tom 2",
+    "refrao": "Salva-nos, ó Filho de Deus, crucificado na carne, a nós que a Ti cantamos: Aleluia!",
+    "versos": [
+      {
+        "numero": "1",
+        "texto": "Ó Deus, por que nos rejeitaste para sempre?"
+      },
+      {
+        "numero": "2",
+        "texto": "Lembra-Te da Tua congregação, que adquiriste desde o princípio."
+      },
+      {
+        "numero": "3",
+        "texto": "Este monte Sião, no qual habitaste."
+      },
+      {
+        "numero": "4",
+        "texto": "Mas Deus é o nosso Rei antes dos séculos; operou a salvação no meio da terra."
+      }
+    ],
+    "gloria": "Glória ao Pai e ao Filho e ao Espírito Santo, e agora e sempre e pelos séculos dos séculos. Amém."
+  },
+  "antifona3_cruz": {
+    "titulo": "Terceira Antífona — Tom 1",
+    "refrao": "Tropário da Cruz: Salva, Senhor, o Teu povo...",
+    "versos": [
+      {
+        "numero": "1",
+        "texto": "O Senhor reina, tremam os povos; Ele está entronizado sobre os querubins, estremeça a terra."
+      },
+      {
+        "numero": "2",
+        "texto": "O Senhor é grande em Sião, e excelso sobre todos os povos."
+      },
+      {
+        "numero": "3",
+        "texto": "Adorai o Senhor em Seu átrio santo."
+      }
+    ]
+  },
+  "elevacao_da_cruz": {
+    "titulo": "Antífonas Festivas da Elevação da Santa Cruz",
+    "refrao": "Pelas orações da Mãe de Deus, ó Salvador, salva-nos.",
+    "versos": [
+      {
+        "numero": "1ª Antífona",
+        "texto": "Ó Deus, meu Deus, atende a mim; por que me desamparaste?"
+      },
+      {
+        "numero": "2ª Antífona",
+        "texto": "Ó Deus, por que nos rejeitaste para sempre?"
+      },
+      {
+        "numero": "3ª Antífona",
+        "texto": "O Senhor reina, tremam os povos; Ele está entronizado sobre os querubins, estremeça a terra."
+      }
+    ]
   }
 }

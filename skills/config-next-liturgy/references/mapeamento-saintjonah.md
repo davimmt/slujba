@@ -10,15 +10,18 @@
 | :--- | :--- | :--- | :--- |
 | Cabeçalho / Título | `titulo` | - | Formato: `"[Nº]º Domingo após Pentecostes / [Santos] / [Festa]"` |
 | Tom | `tom` | - | `"1"` a `"8"` |
-| Antiphons / Beatitudes | `antifonas_ids` | `antifonas.json` | `[]` para Típicas/Bem-aventuranças, ou `["festa"]` se houver antífonas próprias |
+| Antiphons / Beatitudes | `antifonas_ids` | `antifonas.json` | `[]` para Típicas/Bem-aventuranças, ou `["antifona1_festa", "antifona2_festa", ...]` (com `refrao` separado dos versos) |
+| Verso de Entrada | `verso_entrada_id` | `versos-entrada.json` | `"elevacao_da_cruz"`, `"padrao"` ou omitir se não houver verso móvel próprio |
 | Troparia | `troparios_ids` | `troparios.json` | `["d<tom>", "<festa>", "<padroeiro>", "<santo>"]` |
 | Kontakia | `kontakions_ids` | `kondakions.json` | `["d<tom>", "<padroeiro>", "<santo>", "<theotokion_ou_festa>"]` |
+| Triságio | `trisagio_id` | `trisagios.json` | `"cruz"`, `"batismo"`, `"padrao"` ou omitir para o Triságio padrão |
 | Prokimenon 1 | `prokimeno1_id` | `prokimenos.json` | `"d<tom>"` (ou da festa) |
 | Verso Prokímeno | `prokimeno_verso_id` | `versos.json` | `"sl<cap>-<verso>"` |
 | Prokimenon 2 (opcional) | `prokimeno2_id` | `prokimenos.json` | Chave bíblica/santo (ex: `"lc1-46"`, `"sl115-15"`) ou `null` |
 | Alleluia Verses | `aleluia1`, `aleluia2`, `aleluia3` | `versos.json` | `{"id": "sl<cap>-<verso>", "tom": "<tom>"}` |
 | Zadostoinik / Megalynarion | `megalinario` | `megalinarios.json` | `"nome_festa"` ou `""` (vazio para "É Digno em Verdade") |
 | Communion Verse | `versos_comunhao_id` | `versos-comunhao.json` | `"louvai"`, `"tomarei_calice"`, `"louvai_tomarei_calice"`, etc. |
+| Em vez de "Vimos a Luz verdadeira" | `vimos_a_luz_id` | `vimos-a-luz.json` / `troparios.json` | `"elevacao_da_cruz"`, `"pascoa"`, etc. ou `null` no domingo comum |
 
 ## 3. Regras de Ordem Litúrgica (Typikon Russo / ROCOR)
 

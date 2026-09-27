@@ -66,6 +66,31 @@ Verifique se todas as chaves necessárias existem nos arquivos JSON de `src/data
     "verso": "Texto do verso bíblico."
   }
   ```
+- `src/data/antifonas.json` (quando aplicável):
+  ```json
+  "antifona1_festa": {
+    "titulo": "Primeira Antífona — Tom 2",
+    "refrao": "Pelas orações da Mãe de Deus, ó Salvador, salva-nos.",
+    "versos": [
+      { "numero": "1", "texto": "Primeiro verso..." },
+      { "numero": "2", "texto": "Segundo verso..." }
+    ],
+    "gloria": "Glória ao Pai e ao Filho e ao Espírito Santo, e agora e sempre e pelos séculos dos séculos. Amém."
+  }
+  ```
+- `src/data/versos-entrada.json` (quando aplicável):
+  ```json
+  "festa_id": "Texto do verso de entrada da festa..."
+  ```
+- `src/data/trisagios.json` (quando aplicável):
+  ```json
+  "festa_id": [
+    "Verso principal... (Três vezes)",
+    "Glória... E agora...",
+    "Cláusula final...",
+    "Verso principal..."
+  ]
+  ```
 - `src/data/megalinarios.json` (quando aplicável):
   ```json
   "festa_id": {
@@ -77,6 +102,13 @@ Verifique se todas as chaves necessárias existem nos arquivos JSON de `src/data
 - `src/data/versos-comunhao.json` (quando aplicável):
   ```json
   "chave_comunhao": "Texto do verso da comunhão // Aleluia, Aleluia, Aleluia!"
+  ```
+- `src/data/vimos-a-luz.json` (quando aplicável):
+  ```json
+  "festa_id": {
+    "subtitulo": "Tropário da Festa — Tom 1",
+    "texto": "Texto do tropário festivo que substitui Vimos a Luz verdadeira..."
+  }
   ```
 
 > **Padrão Litúrgico de Pontuação**:
@@ -91,8 +123,10 @@ Preencha o arquivo `config.json` na raiz do projeto com o esquema esperado por `
   "titulo": "13º Domingo após Pentecostes / Mártir Míron de Cízico / Pós-festa da Dormição",
   "tom": "4",
   "antifonas_ids": [],
+  "verso_entrada_id": null,
   "troparios_ids": ["d4", "dormicao", "zinaida_filonila"],
   "kontakions_ids": ["d4", "zinaida_filonila", "miron_cizico", "dormicao"],
+  "trisagio_id": null,
   "prokimeno1_id": "d4",
   "prokimeno_verso_id": "sl103-1",
   "prokimeno2_id": "lc1-46",
@@ -100,7 +134,8 @@ Preencha o arquivo `config.json` na raiz do projeto com o esquema esperado por `
   "aleluia2": { "id": "sl44-8", "tom": "4" },
   "aleluia3": { "id": "sl131-8", "tom": "2" },
   "megalinario": "dormicao",
-  "versos_comunhao_id": "louvai_tomarei_calice"
+  "versos_comunhao_id": "louvai_tomarei_calice",
+  "vimos_a_luz_id": null
 }
 ```
 
@@ -108,6 +143,7 @@ Preencha o arquivo `config.json` na raiz do projeto com o esquema esperado por `
 - **Tropários**: Ressurreição (`d<tom>`) → Festa/Pós-festa → Templo/Padroeiro → Santos do dia.
 - **Kondákios**: Ressurreição (`d<tom>`) → Templo/Padroeiro → Santos do dia (*Glória ao Pai...* no penúltimo) → Festa/Theotokion (*E agora e sempre...* no último).
 - Se não houver Kondákio festivo no final, utilize `"admiravel_protetora"`.
+- **Verso de Entrada, Triságio e Vimos a Luz**: Devem ser `null` nos domingos comuns para não serem exibidos; preencha apenas quando houver substituição festiva própria (ex: `"elevacao_da_cruz"`, `"pascoa"`).
 
 ### 5. Validação
 Confira se:
