@@ -1,35 +1,35 @@
 {
-  "titulo": "Festa da Elevação da Preciosa e Vivificante Cruz do Senhor",
+  "titulo": "18º Domingo após o Pentecostes / Apódose da Elevação da Preciosa e Vivificante Cruz do Senhor",
   "tom": "1",
-  "antifonas_ids": [
-    "antifona1_cruz",
-    "antifona2_cruz",
-    "antifona3_cruz"
-  ],
-  "verso_entrada_id": "elevacao_da_cruz",
+  "antifonas_ids": [],
+  "verso_entrada_id": null,
   "troparios_ids": [
-    "elevacao_da_cruz"
+    "d1",
+    "elevacao_da_cruz",
+    "zinaida_filonila"
   ],
   "kontakions_ids": [
+    "d1",
+    "zinaida_filonila",
     "elevacao_da_cruz"
   ],
-  "trisagio_id": "elevacao_da_cruz",
-  "prokimeno1_id": "sl98-5",
-  "prokimeno_verso_id": "sl98-1",
-  "prokimeno2_id": null,
+  "trisagio_id": null,
+  "prokimeno1_id": "d1",
+  "prokimeno_verso_id": "sl32-1",
+  "prokimeno2_id": "sl98-5",
   "aleluia1": {
-    "id": "aleluia",
-    "tom": "1"
-  },
-  "aleluia2": {
     "id": "sl73-2",
     "tom": "1"
   },
-  "aleluia3": {
+  "aleluia2": {
     "id": "sl73-12",
     "tom": "1"
   },
+  "aleluia3": {
+    "id": "sl17-48",
+    "tom": "1"
+  },
   "megalinario": "elevacao_da_cruz",
-  "versos_comunhao_id": "luz_face_cruz",
-  "vimos_a_luz_id": "elevacao_da_cruz"
+  "versos_comunhao_id": "luz_face_cruz_louvai",
+  "vimos_a_luz_id": "padrao"
 }
