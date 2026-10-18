@@ -1,36 +1,36 @@
 {
-  "titulo": "19º Domingo após o Pentecostes / São Caritão, o Confessor",
-  "tom": "2",
+  "titulo": "20º Domingo após o Pentecostes / Santos Hierarcas de Moscou",
+  "tom": "3",
   "antifonas_ids": [],
   "verso_entrada_id": null,
   "troparios_ids": [
-    "d2",
+    "d3",
     "zinaida_filonila",
-    "caritao"
+    "hierarcas_moscou"
   ],
   "kontakions_ids": [
-    "d2",
+    "d3",
     "zinaida_filonila",
-    "caritao",
+    "hierarcas_moscou",
     "admiravel_protetora"
   ],
   "trisagio_id": null,
-  "prokimeno1_id": "d2",
-  "prokimeno_verso_id": "sl117-18",
-  "prokimeno2_id": "sl149-5",
+  "prokimeno1_id": "d3",
+  "prokimeno_verso_id": "sl46-2",
+  "prokimeno2_id": "sl115-15",
   "aleluia1": {
-    "id": "sl19-1",
-    "tom": "2"
+    "id": "sl30-2",
+    "tom": "3"
   },
   "aleluia2": {
-    "id": "sl19-9",
-    "tom": "2"
+    "id": "sl30-3",
+    "tom": "3"
   },
   "aleluia3": {
-    "id": "sl111-1",
-    "tom": "6"
+    "id": "sl131-9",
+    "tom": "2"
   },
   "megalinario": "",
-  "versos_comunhao_id": "justos_memoria_rumores",
+  "versos_comunhao_id": "justos_louvor",
   "vimos_a_luz_id": null
 }
