@@ -64,7 +64,7 @@
     "tom": "1",
     "versos": "Tendo consumado uma vida bem-aventurada junto aos coros dos mártires, / na terra dos mansos dignamente te estabeleces, ó Macário teóforo; / e, tendo habitado o deserto como se fora uma cidade, / destes testemunho da graça dos milagres recebida de Deus. // Portanto, nós te honramos."
   },
-  "eusebio_samosata" : {
+  "eusebio_samosata": {
     "titulo": "ao Santo Hieromártir Eusébio, Bispo de Samósata",
     "tom": "4",
     "versos": "Como hierarca viveste piedosamente, / e tendo percorrido o caminho do martírio, / destruíste as oferendas dos idólatras, / ó Santo Hierarca Eusébio. / Pela tua ousadia perante Cristo nosso Deus, // roga-Lhe que salve as nossas almas."
@@ -74,27 +74,22 @@
     "tom": "2",
     "versos": "Recebeste para Ti, ó Senhor, / os divinamente inspirados pregadores, os Corifeus dos Teus Apóstolos, / para participarem de Teus bens e de Teu repouso; / pois aceitaste seus labores e sua morte / acima de todo sacrifício, // ó Tu que És o único conhecedor do coração dos homens."
   },
-  "padres_primeiros_concilios" : {
+  "padres_primeiros_concilios": {
     "titulo": "aos Santos Padres dos Seis Primeiros Concílios Ecumênicos",
     "tom": "8",
     "versos": "A pregação dos apóstolos e as doutrinas dos pais confirmaram a única Fé da Igreja. / E, vestida do manto da verdade, tecido da mais alta teologia, // Ela glorifica o grande mistério da piedade."
   },
-  "serafim_sarov" : {
+  "serafim_sarov": {
     "titulo": "a São Serafim de Sarov",
     "tom": "2",
     "versos": "Desprezando a beleza do mundo e a corrupção dele, / tu fizeste a tua morada no Mosteiro de Sarov. / E tendo vivido lá como um anjo, tu te tornaste para muitos uma via de salvação. / Por essa razão Cristo te glorificou, ó padre Serafim, / e te enriqueceu com o dom de curas e milagres. / Por isso, nós cantamos a ti: // Rejubila, ó nosso venerável padre Serafim!"
   },
-  "serafim_sarov" : {
-    "titulo": "a São Serafim de Sarov",
-    "tom": "2",
-    "versos": "Desprezando a beleza do mundo e a corrupção dele, / tu fizeste a tua morada no Mosteiro de Sarov. / E tendo vivido lá como um anjo, tu te tornaste para muitos uma via de salvação. / Por essa razão Cristo te glorificou, ó padre Serafim, / e te enriqueceu com o dom de curas e milagres. / Por isso, nós cantamos a ti: // Rejubila, ó nosso venerável padre Serafim!"
-  },
-  "profeta_elias" : {
+  "profeta_elias": {
     "titulo": "ao Santo e Glorioso Profeta Elias",
     "tom": "2",
     "versos": "Ó renomado Elias, / profeta e vidente das grandes obras de Deus, / que pela tua palavra detiveste mesmo as chuvas: // roga por nós ao único Amigo dos homens."
   },
-  "panteleimon" : {
+  "panteleimon": {
     "titulo": "ao Santo e Grande Mártir Curador Panteleimon",
     "tom": "5",
     "versos": "Como imitador do Misericordioso, / d'Ele recebeste a graça da cura, / ó portador da paixão e mártir de Cristo nosso Deus, / cura as enfermidades de nossas almas / pelas tuas orações, / e livra das ciladas do inimigo aqueles que clamam com fé: // Salva-nos, ó Senhor."
@@ -193,5 +188,10 @@
     "titulo": "aos Santos Hierarcas de Moscou",
     "tom": "3",
     "versos": "Piamente vivestes entre os santos hierarcas / e conduzistes o povo ao conhecimento divino. / E, sendo agradáveis a Deus, / fostes por Ele glorificados / com a incorrupção e com milagres, // como discípulos da Sua infinita graça."
+  },
+  "padres_setimo_concilio": {
+    "titulo": "aos Santos Padres do Sétimo Concílio Ecumênico",
+    "tom": "6",
+    "versos": "***O Filho que resplandeceu inefavelmente do Pai, / nasceu de uma mulher, duplo em Sua natureza. / Conhecendo-O, não negamos a imagem de Sua forma; / mas, representando-a piamente, nós a veneramos com fé. / E por esta causa a Igreja, guardando a verdadeira fé, // beija o ícone da encarnação de Cristo."
   }
 }

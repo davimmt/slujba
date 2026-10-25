@@ -59,32 +59,32 @@
     "tom": "1",
     "versos": "Como cidadão do deserto, um anjo na carne e um realizador de milagres / manifestaste-te, ó nosso teóforo pai Macário; / pelo jejum, pela vigília e pela oração, recebeste os dons celestiais, / e curas os enfermos e as almas daqueles que recorrem a ti com fé. / Glória Aquele que te deu a força! / Glória Aquele que te coroou! // Glória Aquele que realiza curas para todos por meio de ti!"
   },
-  "eusebio_samosata" : {
+  "eusebio_samosata": {
     "titulo": "ao Santo Hieromártir Eusébio, Bispo de Samósata",
     "tom": "4",
     "versos": "Compartilhando os caminhos dos Apóstolos, / foste um sucessor no seu trono. / Pela prática da virtude, encontraste o caminho da divina contemplação / ó inspirado por Deus. / Ensinando, sem erro, a palavra da verdade, / defendeste a Fé até o derramamento do teu sangue. / Ó Hieromártir Eusébio, // intercede junto a Cristo Deus pela salvação de nossas almas."
   },
-  "pedro_paulo" : {
+  "pedro_paulo": {
     "titulo": "aos Santos Apóstolos Pedro e Paulo",
     "tom": "4",
     "versos": "Príncipes dos Apóstolos e doutores do Universo, / intercedei junto ao Mestre de Tudo // para que Ele conceda a paz ao mundo e a salvação de nossas almas."
   },
-  "padres_primeiros_concilios" : {
+  "padres_primeiros_concilios": {
     "titulo": "aos Santos Padres dos Seis Primeiros Concílios Ecumênicos",
     "tom": "8",
     "versos": "Tu és sumamente glorificado, ó Cristo nosso Deus, / que estabeleceste nossos santos pais como estrelas luminosas sobre a terra, / e através deles nos conduziste à verdadeira Fé. // Ó Misericordiosíssimo, glória a Ti."
   },
-  "serafim_sarov" : {
+  "serafim_sarov": {
     "titulo": "a São Serafim de Sarov",
     "tom": "4",
     "versos": "Desde a tua juventude tu amaste Cristo, ó bendito; / e incendiado pelo desejo de servir somente a Ele, tu lutaste no deserto em orações e trabalhos incessantes; / e, adquirindo o amor de Cristo, com compunção de coração, tu foste visto como o amado favorito da Mãe de Deus. / Por isso, nós clamamos a ti: // por tuas súplicas, salva-nos, ó venerável Pai!"
   },
-  "profeta_elias" : {
+  "profeta_elias": {
     "titulo": "ao Santo e Glorioso Profeta Elias",
     "tom": "4",
     "versos": "Anjo encarnado, cume dos profetas, / precursor da vinda de Cristo, / o glorioso Elias enviou do alto a graça a Eliseu, / ele afasta as enfermidades e purifica os leprosos. // Por isso, ele derrama curas sobre aqueles que o honram."
   },
-  "panteleimon" : {
+  "panteleimon": {
     "titulo": "ao Santo e Grande Mártir Curador Panteleimon",
     "tom": "3",
     "versos": "Ó santo portador da paixão e curador Panteleimon, / intercede junto ao Deus misericordioso / para que Ele conceda às nossas almas // o perdão de nossos pecados."
@@ -188,5 +188,10 @@
     "titulo": "aos Santos Hierarcas de Moscou",
     "tom": "4",
     "versos": "Ó primazes da Rússia, verdadeiros guardiões das tradições apostólicas, / colunas inabaláveis, mestres da Ortodoxia: / Pedro, Aleixo, Jonas, Filipe, Hermógenes e Tíkhon, / suplicai ao Soberano de todos // que conceda a paz ao mundo e grande misericórdia às nossas almas."
+  },
+  "padres_setimo_concilio": {
+    "titulo": "aos Santos Padres do Sétimo Concílio Ecumênico",
+    "tom": "8",
+    "versos": "***Tu és sumamente glorificado, ó Cristo nosso Deus, / que estabeleceste nossos santos pais como estrelas luminosas sobre a terra, / e através deles nos conduziste à verdadeira Fé. // Ó Misericordiosíssimo, glória a Ti."
   }
 }

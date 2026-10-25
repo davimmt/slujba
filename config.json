@@ -1,34 +1,31 @@
 {
-  "titulo": "20º Domingo após o Pentecostes / Santos Hierarcas de Moscou",
-  "tom": "3",
+  "titulo": "21º Domingo após o Pentecostes / Santa Mártir e Anárgira Zinaída",
+  "tom": "4",
   "antifonas_ids": [],
   "verso_entrada_id": null,
   "troparios_ids": [
-    "d3",
-    "zinaida_filonila",
-    "hierarcas_moscou"
+    "d4",
+    "zinaida_filonila"
   ],
   "kontakions_ids": [
-    "d3",
-    "zinaida_filonila",
-    "hierarcas_moscou",
-    "admiravel_protetora"
+    "d4",
+    "zinaida_filonila"
   ],
   "trisagio_id": null,
-  "prokimeno1_id": "d3",
-  "prokimeno_verso_id": "sl46-2",
-  "prokimeno2_id": "sl115-15",
+  "prokimeno1_id": "d4",
+  "prokimeno_verso_id": "sl103-1",
+  "prokimeno2_id": "dan3-26",
   "aleluia1": {
-    "id": "sl30-2",
-    "tom": "3"
+    "id": "sl44-5",
+    "tom": "4"
   },
   "aleluia2": {
-    "id": "sl30-3",
-    "tom": "3"
+    "id": "sl44-8",
+    "tom": "4"
   },
   "aleluia3": {
-    "id": "sl131-9",
-    "tom": "2"
+    "id": "sl49-1",
+    "tom": "1"
   },
   "megalinario": "",
   "versos_comunhao_id": "justos_louvor",
