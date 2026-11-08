@@ -1,33 +1,35 @@
 {
-  "titulo": "21º Domingo após o Pentecostes / Santa Mártir e Anárgira Zinaída",
-  "tom": "4",
+  "titulo": "23º Domingo após o Pentecostes / Santo Grande Mártir Demétrio / Comemoração do Grande Terremoto de Constantinopla (740)",
+  "tom": "6",
   "antifonas_ids": [],
   "verso_entrada_id": null,
   "troparios_ids": [
-    "d4",
-    "zinaida_filonila"
+    "d6",
+    "terremoto",
+    "demetrio"
   ],
   "kontakions_ids": [
-    "d4",
-    "zinaida_filonila"
+    "d6",
+    "demetrio",
+    "terremoto"
   ],
   "trisagio_id": null,
-  "prokimeno1_id": "d4",
-  "prokimeno_verso_id": "sl103-1",
-  "prokimeno2_id": null,
+  "prokimeno1_id": "d6",
+  "prokimeno_verso_id": "sl27-1",
+  "prokimeno2_id": "sl63-11",
   "aleluia1": {
-    "id": "sl44-5",
+    "id": "sl59-3",
     "tom": "4"
   },
   "aleluia2": {
-    "id": "sl44-8",
+    "id": "sl59-4",
     "tom": "4"
   },
   "aleluia3": {
-    "id": "sl49-1",
-    "tom": "1"
+    "id": "sl91-12",
+    "tom": "4"
   },
   "megalinario": "",
-  "versos_comunhao_id": "justos_louvor",
+  "versos_comunhao_id": "justos_memoria_rumores",
   "vimos_a_luz_id": null
 }

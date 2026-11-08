@@ -111,14 +111,6 @@
     "ref": "Sl. 46,2",
     "verso": "Batei palmas, ó nações; aclamai a Deus com júbilo."
   },
-  "sl30-2": {
-    "ref": "Sl. 30,2",
-    "verso": "Em Ti, Senhor, pus a minha esperança, não me deixes ser envergonhado para sempre."
-  },
-  "sl30-3": {
-    "ref": "Sl. 30,3",
-    "verso": "Sê para mim um Deus protetor e uma casa de refúgio para salvar-me."
-  },
   "sl88-12": {
     "ref": "Sl. 88,12",
     "verso": "Teus são os céus, e Tua é a terra."
@@ -162,5 +154,13 @@
   "sl111-1": {
     "ref": "Sl. 111,1",
     "verso": "Bem-aventurado o homem que teme ao Senhor; em Seus mandamentos grandemente se deleita."
+  },
+  "sl59-3": {
+    "ref": "Sl. 59,3",
+    "verso": "Ó Deus, Tu nos rejeitaste e nos destruíste; iraste-Te e tiveste piedade de nós."
+  },
+  "sl59-4": {
+    "ref": "Sl. 59,4",
+    "verso": "Fizeste tremer a terra e a conturbaste."
   }
 }
